@@ -750,7 +750,33 @@ footer{
 .footer__right li a:hover{
     color: #dc4f72;
 }
-
+/* BACK TO TOP  */
+.backToTop {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    color: white;
+    opacity: .7;
+    z-index: 99;
+    visibility: hidden;
+}
+.backToTop i{
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    background-color: #dc4f72;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 5px;
+    color: white;
+    transition: all .5s;
+}
+.backToTop.show {
+    visibility: visible;
+}
+.backToTop:hover i{
+    background-color: rgba(255, 0, 0, 0.616);
+}
 @media screen and (min-width:1200px) {
     .container {
         max-width: 100%;
@@ -792,6 +818,5 @@ footer{
     }
     .PropleSay__items .img{
         margin: 0 auto;
-    }
-    
+    }  
 }
