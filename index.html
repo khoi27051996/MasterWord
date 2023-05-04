@@ -48,7 +48,7 @@
                             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="./About.html">About</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Servies</a>
@@ -559,6 +559,8 @@
 
 
     </footer>
+
+    <a class="backToTop show" href="#"><i class="fa-solid fa-angle-up"></i></a>
     <!-- JQUERY  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
         integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
@@ -592,6 +594,23 @@
                 },
             }
         })
+    </script>
+    <!-- BACK TO TOP  -->
+    <script>
+        var btn = $('.backToTop');
+
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 300) {
+                btn.addClass('show');
+            } else {
+                btn.removeClass('show');
+            }
+        });
+
+        btn.on('click', function (e) {
+            e.preventDefault();
+            $('html, body').animate({ scrollTop: 0 }, '300');
+        });
     </script>
 </body>
 
