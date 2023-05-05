@@ -790,6 +790,12 @@ footer{
         color: white;
         border-radius: 5px;
     }
+    .navbar-expand-lg .nav-link, .search, .header__demo{
+        display: block;
+        padding: 8px 0;
+        text-align: center;
+        background-color: white;
+    }
     .container {
         max-width: 100%;
         padding: 0 25px;
